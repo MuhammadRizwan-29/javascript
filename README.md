@@ -1,3 +1,7 @@
 # Javascript Code
------------------------------------
-_ 1.0 Slider
+
+---
+
+#### 1.0 Slider
+
+#### 2.0 Quiz Application
