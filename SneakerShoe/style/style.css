@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -73,7 +77,6 @@ nav {
     overflow: hidden;
 }
 
-.slider :where(.slider_wrapper, .slider_item) {}
 
 .slider_wrapper {
     display: flex;
@@ -181,6 +184,118 @@ nav {
 }
 
 /* end of Slider */
+
+/* Features */
+.features :where(.features_wrapper, .feature) {
+    display: flex;
+    align-items: center;
+}
+
+.features_wrapper {
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.feature {
+    flex-direction: column;
+    text-align: center;
+}
+
+.feature img {
+    width: 50px;
+    height: 50px;
+}
+
+.feature .title {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px;
+}
+
+.feature .description {
+    color: grey;
+    width: 50%;
+    height: 100px;
+}
+
+/* end of Features */
+
+/* Product */
+.product {
+    position: relative;
+    height: 100vh;
+    background-color: whitesmoke;
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+}
+
+.product img {
+    width: 50%;
+    height: 100%;
+}
+
+.product_details {
+    width: 40%;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+}
+
+.product_details h1 {
+    font-size: 75px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.product_details p {
+    font-size: 24px;
+    color: grey;
+}
+
+.product :where(.colors, .sizes) {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.product .color {
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    border-radius: 5px;
+    background-color: #111;
+    margin-right: 10px;
+}
+
+.product .color:last-child {
+    background-color: darkblue;
+}
+
+.product .size {
+    padding: 5px 20px;
+    border: 1px solid black;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.product .product_btn {
+    cursor: pointer;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    background-color: black;
+    float: right;
+    border: 1px solid black;
+    transition: all 0.25s;
+}
+
+.product .product_btn:hover {
+    background-color: white;
+    color: black;
+}
+
+/* end of Product */
+
 
 /* Tablet Media Query */
 @media only screen and (min-width: 501px) and (max-width:900px) {
