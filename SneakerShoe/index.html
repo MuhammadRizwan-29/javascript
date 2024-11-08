@@ -15,7 +15,7 @@
 
 <body>
     <!-- Navbar -->
-    <nav>
+    <nav id="nav">
         <div class="nav_top">
             <div class="nav_item">
                 <img src="./asset/img/sneakers.png" alt="Sneaker Shoe Logo" />
@@ -139,9 +139,125 @@
                 </div>
                 <button class="product_btn">Buy Now</button>
             </div>
-
+            <div class="payment">
+                <h1>Personal Information</h1>
+                <label for="">Name & Surname</label>
+                <input type="text" placeholder="John Doe" id="">
+                <label for="">Phone Number</label>
+                <input type="text" placeholder="+1 234 5678" id="">
+                <label for="">Address</label>
+                <input type="text" placeholder="St 9, Center City West" id="">
+                <h1>Card Information</h1>
+                <div class="card_icons">
+                    <img src="./asset/img/visa.png" alt="">
+                    <img src="./asset/img/master.png" alt="">
+                </div>
+                <input type="password" class="card_number" placeholder="Enter Card Number" />
+                <div class="card_info">
+                    <input type="text" placeholder="mm" />
+                    <input type="text" placeholder="yyyy" />
+                    <input type="text" placeholder="cvv" />
+                </div>
+                <button>Checkout</button>
+                <span class="close">X</span>
+            </div>
         </div>
     </section>
+
+    <!-- Gallery -->
+    <section>
+        <div class="gallery">
+            <div class="gallery_item">
+                <h1>Be Yourself!</h1>
+                <img src="./asset/img/boys_wear_nike_shoe.jpeg" alt="">
+            </div>
+            <div class="gallery_item">
+                <img src="./asset/img/boy_wearing_shoes.webp" alt="">
+                <h1>This is the First Day of Your New Life</h1>
+            </div>
+            <div class="gallery_item">
+                <h1>Just Do it!</h1>
+                <img src="./asset/img/boy_jumping_with_nike_shoe.webp" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- New Season -->
+    <section>
+        <div class="new_season">
+            <div class="ns_item">
+                <img src="./asset/img/girl_wearing_shoes.webp" alt="New Season Collection">
+            </div>
+            <div class="ns_item">
+                <h3>WINTER NEW ARRIVALS</h3>
+                <h1>New Season</h1>
+                <h1>New Collection</h1>
+                <a href="#nav">
+                    <button>CHOOSE YOUR STYLE</button>
+                </a>
+            </div>
+            <div class="ns_item">
+                <img src="./asset/img/girl_jumping_with_shoe.webp" alt="New Season Collection">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="ft_left">
+            <div class="ft_menu">
+                <h1>About Us</h1>
+                <ul>
+                    <li>Company</li>
+                    <li>Contact</li>
+                    <li>Careers</li>
+                    <li>Affiliates</li>
+                    <li>Stores</li>
+                </ul>
+            </div>
+            <div class="ft_menu">
+                <h1>Useful Links</h1>
+                <ul>
+                    <li>Support</li>
+                    <li>Refund</li>
+                    <li>FAQ</li>
+                    <li>Feedback</li>
+                    <li>Stories</li>
+                </ul>
+            </div>
+            <div class="ft_menu">
+                <h1>Products</h1>
+                <ul>
+                    <li>Air Force</li>
+                    <li>Air Jordon</li>
+                    <li>Blazer</li>
+                    <li>Crater</li>
+                    <li>Hippie</li>
+                </ul>
+            </div>
+        </div>
+        <div class="ft_right">
+            <div class="ft_menu right">
+                <h1>Subscibe to our newsletter</h1>
+                <div class="newsletter">
+                    <input type="text" placeholder="your@email.com" />
+                    <button type="submit">Subscirbe Now</button>
+                </div>
+            </div>
+            <div class="ft_menu right">
+                <h1>Follow us</h1>
+                <div class="social_icons">
+                    <img src="./asset/img/facebook.png" alt="Facebook icon" />
+                    <img src="./asset/img/twitter.png" alt="Twitter icon" />
+                    <img src="./asset/img/instagram.png" alt="Instagram icon">
+                    <img src="./asset/img/whatsapp.png" alt="WhatsApp icon">
+                </div>
+            </div>
+            <div class="ft_menu right">
+                <span class="copyright">@Muhammad Rizwan. All rights reserved. &#169; 2024</span>
+            </div>
+        </div>
+    </footer>
     <script src="./script/app.js"></script>
 </body>
 

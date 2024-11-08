@@ -87,6 +87,9 @@ const currentProductColors = document.querySelectorAll(
   ".product_details .color"
 );
 const currentProductSizes = document.querySelectorAll(".product_details .size");
+const paymentModal = document.querySelector(".payment");
+const buyNowBtn = document.querySelector(".product_btn");
+const closeModal = document.querySelector(".payment .close");
 
 let chooseProduct = products[0];
 
@@ -127,4 +130,13 @@ currentProductSizes.forEach((size, index) => {
     size.style.backgroundColor = "black";
     size.style.color = "white";
   });
+});
+
+/* Open & Close Modal */
+buyNowBtn.addEventListener("click", () => {
+  paymentModal.style.display = "flex";
+});
+
+closeModal.addEventListener("click", () => {
+  paymentModal.style.display = "none";
 });
